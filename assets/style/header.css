@@ -127,6 +127,8 @@
           #home #header #navbar-fixed .nav-fx-container .nav-container-items .navbar-toggle .toggle:hover {
             background-color: #00a6a6;
             -webkit-transition: all .4s ease-out 0s; }
+      #home #header #navbar-fixed .nav-fx-container .navbar-items-menu {
+        display: none; }
   #home #section {
     position: relative; }
     #home #section .section-carousel .se-ca-information {
@@ -142,32 +144,32 @@
       #home #section .section-carousel .se-ca-information .info-text .info-description {
         font-size: 1.6rem;
         color: #afafaf; }
-      #home #section .section-carousel .se-ca-information .info-btn {
+      #home #section .section-carousel .se-ca-information .info-button {
         display: flex; }
-        #home #section .section-carousel .se-ca-information .info-btn .btn-touch {
+        #home #section .section-carousel .se-ca-information .info-button .button-touch {
           margin-top: 14px; }
-          #home #section .section-carousel .se-ca-information .info-btn .btn-touch .btn {
+          #home #section .section-carousel .se-ca-information .info-button .button-touch .button {
             text-decoration: none;
             color: #fff;
             padding: 14px 8px;
             border-radius: 8px;
             background-color: #058283;
             font-weight: 400; }
-          #home #section .section-carousel .se-ca-information .info-btn .btn-touch .btn:hover {
+          #home #section .section-carousel .se-ca-information .info-button .button-touch .button:hover {
             background-color: #00a6a6;
             -webkit-transition: all .4s ease-out 0s; }
-        #home #section .section-carousel .se-ca-information .info-btn .btn-read-more {
+        #home #section .section-carousel .se-ca-information .info-button .button-read-more {
           margin-left: 16px;
           border: 1px solid #058283;
           text-decoration: none;
           padding: 13px 18px;
           border-radius: 8px;
           font-weight: 400; }
-          #home #section .section-carousel .se-ca-information .info-btn .btn-read-more .btn {
+          #home #section .section-carousel .se-ca-information .info-button .button-read-more .button {
             text-decoration: none;
             color: #fff;
             font-weight: 400; }
-        #home #section .section-carousel .se-ca-information .info-btn .btn-read-more:hover {
+        #home #section .section-carousel .se-ca-information .info-button .button-read-more:hover {
           background-color: #00a6a6;
           -webkit-transition: all .4s ease-out 0s; }
     #home #section .section-carousel .sec-cs-photo img {
@@ -268,7 +270,8 @@
     #home #section-service .service {
       display: flex;
       align-items: flex-end;
-      background-color: #111117; }
+      background-color: #111117;
+      width: 106%; }
       #home #section-service .service .service-information {
         max-width: 68%;
         margin-left: 6%;
@@ -287,15 +290,15 @@
         #home #section-service .service .service-information .description {
           color: #4c4c4c;
           font-size: 1.2rem; }
-      #home #section-service .service .service-btn {
+      #home #section-service .service .service-button {
         color: #fff;
         max-width: 220px;
-        padding: 24px 72px; }
-        #home #section-service .service .service-btn .btn {
+        padding: 24px 33px; }
+        #home #section-service .service .service-button .button {
           border: 1px solid #00a6a6;
           padding: 20px 42px;
           border-radius: 8px; }
-        #home #section-service .service .service-btn .btn:hover {
+        #home #section-service .service .service-button .button:hover {
           background-color: #00a6a6;
           -webkit-transition: all .4s ease-out 0s; }
     #home #section-service .service-items {
@@ -440,7 +443,8 @@
       display: flex;
       align-items: flex-end;
       background-color: #eef4ed;
-      justify-content: space-between; }
+      justify-content: space-between;
+      width: 93%; }
       #home #section-blog .blog .blog-service .blog-service-info {
         max-width: 68%;
         margin-left: 6%;
@@ -462,11 +466,11 @@
       #home #section-blog .blog .blog-service .description {
         color: #4c4c4c;
         font-size: 1.2rem; }
-      #home #section-blog .blog .blog-service .blog-service-btn {
+      #home #section-blog .blog .blog-service .blog-service-button {
         color: #fff;
         max-width: 220px;
-        padding: 24px 72px; }
-        #home #section-blog .blog .blog-service .blog-service-btn .btn {
+        padding: 24px 0px; }
+        #home #section-blog .blog .blog-service .blog-service-button .button {
           border: 1px solid #00a6a6;
           padding: 20px 42px;
           border-radius: 8px;
@@ -606,7 +610,7 @@
         background-color: #FFFFFF0D;
         color: #ffffff;
         font-size: 20px; }
-      #home #news-letter .news-data .subscribe-btn {
+      #home #news-letter .news-data .subscribe-button {
         margin: 20px;
         text-decoration: none;
         color: #ffffff;
@@ -614,8 +618,8 @@
         border-radius: 8px;
         background-color: #058283;
         font-weight: 800;
-        width: 96px; }
-        #home #news-letter .news-data .subscribe-btn .btn {
+        width: 153px; }
+        #home #news-letter .news-data .subscribe-button .button {
           color: #ffffff;
           font-weight: 800; }
   #home #get-on-touch {
@@ -653,7 +657,7 @@
         padding-left: 2%;
         margin-top: 10px; }
       #home #get-on-touch .touch .input-data .info select {
-        width: 385px;
+        width: 368px;
         height: 44px;
         font-size: 16px;
         background-color: #ececec;
@@ -679,8 +683,8 @@
         border-radius: 8px;
         background-color: #058283;
         font-weight: 800;
-        width: 38px; }
-        #home #get-on-touch .touch .send-button .btn {
+        width: 100px; }
+        #home #get-on-touch .touch .send-button .button {
           color: #ffffff;
           font-weight: 800; }
       #home #get-on-touch .touch .send-button:hover {
@@ -717,7 +721,7 @@
             font-size: 20px;
             color: #00a6a6;
             font-weight: 500; }
-        #home #get-on-touch .example .ex-info .map-btn {
+        #home #get-on-touch .example .ex-info .map-button {
           margin-top: 26px;
           text-decoration: none;
           color: #ffffff;
@@ -731,14 +735,14 @@
           /* text-align: center; */
           align-items: center;
           justify-content: center; }
-          #home #get-on-touch .example .ex-info .map-btn .btn {
+          #home #get-on-touch .example .ex-info .map-button .button {
             color: #058283;
             font-weight: 800;
             padding: 17%; }
-        #home #get-on-touch .example .ex-info .map-btn:hover {
+        #home #get-on-touch .example .ex-info .map-button:hover {
           background-color: #058283;
           -webkit-transition: all .4s ease-out 0s; }
-          #home #get-on-touch .example .ex-info .map-btn:hover .btn:hover {
+          #home #get-on-touch .example .ex-info .map-button:hover .button:hover {
             color: #ffffff; }
   #home #footer-sections {
     background-color: #080d10;
@@ -793,7 +797,7 @@
             font-size: 20px;
             color: #00a6a6;
             font-weight: 500; }
-        #home #footer-sections .footer-information .footer-contact .map-btn {
+        #home #footer-sections .footer-information .footer-contact .map-button {
           margin-top: 24px;
           text-decoration: none;
           color: #ffffff;
@@ -808,11 +812,11 @@
           align-items: center;
           justify-content: center;
           margin-left: 12px; }
-          #home #footer-sections .footer-information .footer-contact .map-btn .btn {
+          #home #footer-sections .footer-information .footer-contact .map-button .button {
             color: #ffffff;
             font-weight: 800;
             padding: 0; }
-        #home #footer-sections .footer-information .footer-contact .map-btn:hover {
+        #home #footer-sections .footer-information .footer-contact .map-button:hover {
           background-color: #058283;
           -webkit-transition: all .4s ease-out 0s; }
     #home #footer-sections .footer-table {
@@ -878,5 +882,147 @@
   #home .scroll {
     display: block !important;
     -webkit-transition: all .4s ease-out 0s !important; }
+
+@media (max-width: 1200px) {
+  #home #header #navbar {
+    display: none; }
+  #home #header #navbar-fixed .nav-fx-container {
+    margin-top: 0px !important;
+    -webkit-transition: all .4s ease-out 0s; }
+    #home #header #navbar-fixed .nav-fx-container .nav-container-items {
+      display: none;
+      -webkit-transition: all .4s ease-out 0s; }
+    #home #header #navbar-fixed .nav-fx-container .navbar-items-menu {
+      display: flex;
+      margin-left: 64%;
+      align-items: center; }
+      #home #header #navbar-fixed .nav-fx-container .navbar-items-menu .navbar-icons img {
+        width: 34px;
+        height: 32px; }
+      #home #header #navbar-fixed .nav-fx-container .navbar-items-menu .menu {
+        margin-left: 32px; }
+        #home #header #navbar-fixed .nav-fx-container .navbar-items-menu .menu img {
+          width: 36px;
+          height: 44px; }
+  #home #section-blog .blog .cards {
+    display: block; }
+  #home #section-service .service-items {
+    width: 90%;
+    height: 960px;
+    margin: 5%;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em; }
+    #home #section-service .service-items .item {
+      width: 360px;
+      height: 290px;
+      border-radius: 12px;
+      background-color: #19191f; }
+  #home #section-team .team {
+    display: block;
+    text-align: center; }
+    #home #section-team .team .team-information .users {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3em; }
+      #home #section-team .team .team-information .users .team-user {
+        margin-top: 14px; }
+        #home #section-team .team .team-information .users .team-user .user-photo img {
+          width: 153px;
+          height: 170px;
+          border-radius: 5px; }
+    #home #section-team .team .team-quote {
+      width: 100%;
+      height: 582px;
+      background-color: #218284;
+      margin-top: 130px; }
+  #home #get-on-touch {
+    display: block; }
+    #home #get-on-touch .touch .input-data .info input {
+      width: 100%; }
+    #home #get-on-touch .touch .input-data .info select {
+      width: 100%;
+      margin-top: 10px; }
+    #home #get-on-touch .touch .message textarea {
+      width: 100%; }
+  #home #footer-sections {
+    display: block;
+    margin-top: 500px; }
+    #home #footer-sections .footer-information {
+      margin-left: 40%; }
+      #home #footer-sections .footer-information .footer-contact {
+        text-align: center; }
+    #home #footer-sections .footer-table {
+      width: 90%;
+      height: 400px; }
+      #home #footer-sections .footer-table .table {
+        padding: 10% 10% 40% 40%; }
+        #home #footer-sections .footer-table .table .sections-item .section {
+          margin-top: 14px; }
+          #home #footer-sections .footer-table .table .sections-item .section .icon {
+            font-size: 30px;
+            width: 42px; }
+          #home #footer-sections .footer-table .table .sections-item .section .text {
+            font-size: 16px;
+            margin-left: 0; } }
+@media (max-width: 800px) {
+  #home #section-results .results .results-items {
+    grid-template-columns: 1fr 1fr;
+    display: grid; }
+    #home #section-results .results .results-items item {
+      min-width: 500px; }
+  #home #section-service .service {
+    display: block; }
+    #home #section-service .service .service-information .title {
+      font-size: 2.2rem; }
+  #home #section-service .service-items {
+    width: 90%;
+    height: 2000px;
+    margin: 5%;
+    justify-content: space-between;
+    justify-items: center;
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr; }
+    #home #section-service .service-items .item {
+      width: 360px;
+      height: 290px;
+      border-radius: 12px;
+      background-color: #19191f; }
+  #home #section-team .team .team-information .users {
+    display: flex;
+    justify-content: center; }
+  #home #news-letter {
+    display: block;
+    background-color: #111117;
+    width: 100%;
+    height: 500px; }
+    #home #news-letter .news .title {
+      font-size: 2.2rem; }
+    #home #news-letter .news-data {
+      margin-left: 50px; }
+      #home #news-letter .news-data .data .input-data {
+        width: 330px; } }
+@media (max-width: 400px) {
+  #home #section-video .section-container .text-information .title {
+    font-size: 1.8rem; }
+  #home #section-results .results {
+    height: 900px; }
+    #home #section-results .results .results-items {
+      display: block; }
+  #home #section-service .service-items {
+    justify-items: center; }
+    #home #section-service .service-items .item {
+      width: 270px; }
+  #home #section-team .team .team-information .users {
+    display: flex;
+    justify-content: center; }
+    #home #section-team .team .team-information .users .team-user .user-info .username {
+      font-size: 1.2rem; }
+    #home #section-team .team .team-information .users .team-user .user-info .user-social .social li img {
+      width: 30px;
+      height: 30px; } }
 
 /*# sourceMappingURL=header.css.map */
