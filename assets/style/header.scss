@@ -9,6 +9,7 @@
       width: 100%;
       background-color: #21333e;
       justify-content: space-around;
+      align-items: flex-end;
       //padding-left: 22px;
       .header-navbar {
         //max-width: 600px;
@@ -87,18 +88,38 @@
       width: 100%;
       background-color: #21333e0d;
       position: absolute;
-      z-index: 1;
+      z-index: 10;
 
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        margin-top: 0 !important;
+        background-color: #21333e;
+        -webkit-transition: all .4s ease-out 0s;
+
+      }
+
+      .sticky + .content {
+        padding-top: 102px;
+        -webkit-transition: all .4s ease-out 0s;
+
+      }
+      #nav-flex{
+
+    }
       .nav-fx-container {
         display: flex;
-        margin-top: 22px;
-        margin-left: 66px;
+        margin-top: 72px;
+        -webkit-transition: all .4s ease-out 0s;
+
 
         .navbar-logo {
           min-width: 158px;
           //border: 1px solid;
           /* margin-right: 125px; */
           max-width: 158px;
+          margin-left: 77px;
 
           .logo {
             text-decoration: none;
@@ -143,6 +164,7 @@
               display: flex;
               list-style: none;
               padding: 0;
+              margin-top: 14px;
 
               li {
                 padding-left: 50px;
@@ -768,21 +790,21 @@
         }
       }
 
-      .card {
+      .cards {
         display: flex;
         height: 510px;
         background-color: #eef4ed;
         margin-left: 6%;
 
-        .blog-card {
+        .blog-cards {
           margin-left: 1.5%;
           margin-top: 72px;
 
-          .card-item {
+          .cards-item {
             max-width: 360px;
             min-width: 360px;
 
-            .card-photo {
+            .cards-photo {
               position: absolute;
 
               img {
@@ -827,11 +849,11 @@
           }
 
 
-          .card-item:hover {
+          .cards-item:hover {
             max-width: 360px;
             min-width: 360px;
 
-            .card-photo {
+            .cards-photo {
               position: absolute;
 
               img {
@@ -917,7 +939,7 @@
 
         }
 
-        .blog-card:hover {
+        .blog-cards:hover {
           opacity: 0.7;
         }
       }
@@ -1362,5 +1384,21 @@
         font-size: 16px;
       }
     }
+  }
+
+  #arrow{
+    position: fixed;
+    display: none;
+    bottom: 10px;
+    right: 10px;
+    -webkit-transition: all .4s ease-out 0s;
+    h1{
+      color: red;
+    }
+  }
+  .scroll{
+    display: block !important;
+    -webkit-transition: all .4s ease-out 0s !important;
+
   }
   }

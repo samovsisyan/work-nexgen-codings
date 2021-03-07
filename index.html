@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="./assets/style/header.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body id="home">
 <header id="header">
@@ -56,7 +58,7 @@
     </nav>
 
     <nav id="navbar-fixed">
-        <div class="nav-fx-container">
+        <div class="nav-fx-container fixed-top" id="nav-fx">
             <div class="navbar-logo">
                 <a href="#" class="logo">
                     <span class="full-logo">
@@ -343,10 +345,10 @@
                 <span class="btn">SEE ALL</span>
             </div>
         </div>
-        <div class="card">
-            <div class="blog-card">
-                <div class="card-item">
-                    <div class="card-photo">
+        <div class="cards">
+            <div class="blog-cards">
+                <div class="cards-item">
+                    <div class="cards-photo">
                         <img src="./assets/images/section/news-1.jpg" alt="news">
                     </div>
                     <div class="information">
@@ -369,9 +371,9 @@
                     </div>
                 </div>
             </div>
-            <div class="blog-card">
-                <div class="card-item">
-                    <div class="card-photo">
+            <div class="blog-cards">
+                <div class="cards-item">
+                    <div class="cards-photo">
                         <img src="./assets/images/section/news-1.jpg" alt="news">
                     </div>
                     <div class="information">
@@ -394,9 +396,9 @@
                     </div>
                 </div>
             </div>
-            <div class="blog-card">
-                <div class="card-item">
-                    <div class="card-photo">
+            <div class="blog-cards">
+                <div class="cards-item">
+                    <div class="cards-photo">
                         <img src="./assets/images/section/news-1.jpg" alt="news">
                     </div>
                     <div class="information">
@@ -646,5 +648,53 @@
         <p>© 2020 NEXGEN is Proudly Powered by <span>Codings.</span></p>
     </div>
 </footer>
+
+
+<div id="arrow">
+    <h1>scroll</h1>
+</div>
+
+
+<script>
+    window.onscroll = function() {
+        myFunction();
+        scrollMyFunction();
+    };
+
+    let header = document.getElementById("nav-fx");
+    let sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= 1) {
+            header.classList.add("sticky");
+            console.log(window.pageYOffset)
+            console.log('sticky', sticky)
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+
+    let arrowScroll = document.getElementById("arrow");
+    let scroll = arrowScroll.offsetTop;
+    let number = []
+
+    function scrollMyFunction() {
+        if (window.pageYOffset) {
+            number.push(window.pageYOffset)
+            for (let i = 0; i < number.length; i++) {
+                if (number[i] < number[i - 1]) {
+                    arrowScroll.classList.add("scroll");
+                } else {
+                    arrowScroll.classList.remove("scroll");
+                }
+            }
+
+        }
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
